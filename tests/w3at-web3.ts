@@ -10,7 +10,7 @@ describe("w3at-web3", () => {
 
   it("Is initialized!", async () => {
     // Add your test here.
-    const tx = await program.methods.initialize().rpc();
+    const tx = await program.methods.initialize("https://w3at.xyz").view();
     console.log("Your transaction signature", tx);
   });
 });
